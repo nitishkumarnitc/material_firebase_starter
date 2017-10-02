@@ -14,12 +14,12 @@ angular
     'ngAria',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
     'ui.router',
-    'firebase'
+    'firebase',
+    'restangular'
   ])
   .config(function ($stateProvider,$mdThemingProvider) {
 
@@ -47,7 +47,12 @@ angular
   })
   .config(function(){
       var config = {
-
+        apiKey: "AIzaSyDGSaSZzpJ8lLj_tiCrCLC8-6oGMQwbilE",
+        authDomain: "imagesserver-49818.firebaseapp.com",
+        databaseURL: "https://imagesserver-49818.firebaseio.com",
+        projectId: "imagesserver-49818",
+        storageBucket: "imagesserver-49818.appspot.com",
+        messagingSenderId: "536730546544"
       };
 
      firebase.initializeApp(config);
